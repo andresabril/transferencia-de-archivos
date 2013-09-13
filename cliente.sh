@@ -8,3 +8,8 @@ case $? in
 	-1)
 		echo "Ha ocurrido un error inesperado.";;
 esac 
+zenity --progress \
+  title="Actualizando los registros del sistema" \
+  text="Rastreando los registros de los correos..." \
+  percentage=0
+
